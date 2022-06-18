@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Side Navigation bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-meta'></i>
+                <div class="logo_name">Code.assassin</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <!-- Search bar -->
+                <a href="#"><i class='bx bx-search-alt'></i></a>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                        <!-- Dashboard -->
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <!-- User -->
+                <a href="#">
+                    <i class='bx bx-user-circle'></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <!-- Messages -->
+                <a href="#">
+                    <i class='bx bxs-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <!-- Analytics -->
+                <a href="#">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <!-- File Manager -->
+                <a href="#">
+                    <i class='bx bx-folder-open'></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+                <span class="tooltip">File Manager</span>
+            </li>
+            <li>
+                <!-- Orders -->
+                <a href="#">
+                    <i class='bx bx-cart'></i>
+                    <span class="links_name">Orders</span>
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <!-- Saved -->
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <!-- Settings -->
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="Profile.jpg">
+                    <div class="name_job">
+                        <div class="name">Kalyan</div>
+                    <div class="job">Web Developer</div>
+                </div>
+            </div>
+            <i class='bx bx-log-out' id="Log-out"></i>
+        </div>
+    </div>
+</div>
+<div class="home_content">
+    <div class="text">Home Content</div>
+</div>
+<Script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search-alt");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+    searchBtn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+</Script>
+
+</body>
+</html>
